@@ -9,6 +9,7 @@ function App() {
     <div>
         <TitleCase />
         <Navbar />
+        <Page1desc />
     </div>
     );
 }
