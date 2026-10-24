@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.hero {
+    min-height: 470px;
+    width: 100%;
+    padding: 70px 24px 28px;
+    background: #f8f6f0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 0 0 36px;
+    color: #8068c6;
+    font-family: "DM Mono", monospace;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.eyebrow-line {
+    display: inline-block;
+    width: 42px;
+    height: 2px;
+    background: #a493d2;
+    flex-shrink: 0;
+}
+
+.hero-title {
+    margin: 0;
+    color: #2e2a3b;
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(56px, 7.5vw, 90px);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -5px;
+}
+
+.italic-text {
+    color: #8068c6;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: -4px;
+}
+
+.hero-description {
+    max-width: 850px;
+    margin: 38px 0 0;
+    color: #807b96;
+    font-family: "DM Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .hero {
+        min-height: 400px;
+        padding: 60px 20px 40px;
+    }
+
+    .hero-eyebrow {
+        gap: 10px;
+        margin-bottom: 32px;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .eyebrow-line {
+        width: 24px;
+    }
+
+    .hero-title {
+        font-size: clamp(45px, 10vw, 62px);
+        letter-spacing: -2.5px;
+    }
+
+    .italic-text {
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        margin-top: 28px;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .desktop-break {
+        display: none;
+    }
+}
