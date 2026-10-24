@@ -7,3 +7,43 @@
 body {
    background-color: var(--bg-color);
 }
+
+.nav-bar {
+    display: flex;
+}
+
+/* Logo styles */
+
+.Logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+}
+
+.syn-logo-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 22px;
+    background-color: #e9e4ed;
+    color: #8060c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.syn-logo-icon svg {
+    width: 38px;
+    height: 38px;
+}
+
+.syn-logo-text {
+    margin: 0;
+    color: #302e40;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 27px;
+    font-weight: 750;
+    letter-spacing: -1.3px;
+    line-height: 1;
+}
