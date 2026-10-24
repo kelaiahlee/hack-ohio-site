@@ -48,6 +48,17 @@
     white-space: nowrap;
 }
 
+.syn-logo-text2 {
+    margin: 0;
+    color: #302e40;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 750;
+    letter-spacing: -1.3px;
+    white-space: nowrap;
+}
+
+
 /* NAV BUTTON CONTAINER */
 .nav-actions {
     display: flex;
