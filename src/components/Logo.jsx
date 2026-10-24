@@ -30,7 +30,7 @@ function Logo() {
                 />
             </svg>
         </div>
-        <h3 className="syn-logo-text">synesthesia</h3>
+        <h3 className="syn-logo-text">synesthesia.</h3>
     </div>);
 }
 

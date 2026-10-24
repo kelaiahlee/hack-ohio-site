@@ -1,0 +1,111 @@
+/* NAVBAR */
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 28px;
+    box-sizing: border-box;
+    gap: 24px;
+    border-bottom: 2px solid #000000;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+}
+
+.syn-logo-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 22px;
+    background-color: #e9e4ed;
+    color: #8060c9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.syn-logo-icon svg {
+    width: 38px;
+    height: 38px;
+}
+
+.syn-logo-text {
+    margin: 0;
+    color: #302e40;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 27px;
+    font-weight: 750;
+    letter-spacing: -1.3px;
+    white-space: nowrap;
+}
+
+/* NAV BUTTON CONTAINER */
+.nav-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+/* SHARED BUTTON STYLES */
+.studio-btn,
+.lib-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    font-family: Inter, Arial, sans-serif;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.studio-btn svg,
+.lib-btn svg {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+}
+
+.p1text {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* STUDIO BUTTON */
+.studio-btn {
+    padding: 17px 20px;
+    border: 2px solid #eae6de;
+    border-radius: 999px;
+    background-color: #fdfcf9;
+    color: #302e40;
+}
+
+.studio-btn:hover {
+    background-color: #f0ede7;
+}
+
+/* GALLERY BUTTON */
+.lib-btn {
+    padding: 17px 20px;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    background: transparent;
+    color: #807b99;
+}
+
+.lib-btn:hover {
+    color: #5e587b;
+}

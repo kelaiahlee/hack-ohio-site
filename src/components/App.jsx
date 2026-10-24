@@ -8,7 +8,6 @@ import Page1desc from "./Page1desc";
 function App() {
     return (
     <div>
-        <TitleCase />
         <Navbar />
         <Page1desc />
     </div>
