@@ -1,0 +1,9 @@
+* {
+    --purple: #7965B9;
+    --bg-color: #F8F4ED;
+    --boxes: #FBF8F5;
+}
+
+body {
+   background-color: var(--bg-color);
+}
