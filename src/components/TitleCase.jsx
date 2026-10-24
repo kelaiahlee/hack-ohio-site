@@ -10,3 +10,5 @@ function TitleCase() {
         </div>
     );
 }
+
+export default TitleCase;

@@ -1,9 +1,10 @@
 import React from "react";
 import { useState } from 'react'
+import TitleCase from "./components/TitleCase";
 
 
 function App() {
-    return <h1>Hello</h1>;
+    return <TitleCase/>;
 }
 
 export default App;
