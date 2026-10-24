@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My HackOHI/O site</title>
+  <style>
+    :root {
+      /* Ship it: try changing this color, then commit and push. */
+      --accent: #4B6587;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #FAF8F4;
+      color: #232C3B;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      width: min(640px, 100% - 32px);
+      padding: 48px 0;
+    }
+    .tag {
+      display: inline-block;
+      font-family: ui-monospace, Menlo, monospace;
+      font-size: 14px;
+      color: #FFFFFF;
+      background: var(--accent);
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    h1 {
+      font-size: clamp(40px, 8vw, 64px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 16px 0;
+      color: var(--accent);
+    }
+    p { font-size: 20px; }
+    footer {
+      margin-top: 48px;
+      font-size: 14px;
+      color: #6B7A90;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="tag">git push → live</span>
+
+    <h1>Your Name</h1>
+
+    <p>Hello from HackOHI/O! This page deploys itself every time I push to main.</p>
+
+    <!-- Teamwork section: add your "About me" paragraph below this line. -->
+
+    <footer>Built at HackOHI/O with The Assembly Club · Deployed by GitHub Actions</footer>
+  </main>
+</body>
+</html>

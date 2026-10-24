@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+# When someone pushes to main…
+on:
+  push: { branches: [main] }
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# If you push twice quickly, finish one deploy before starting the next.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # …on a fresh computer in the cloud…
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # …grab the code…
+      - uses: actions/checkout@v5
+
+      # …package the site…
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
+      # …and publish it.
+      - id: deployment
+        uses: actions/deploy-pages@v4
