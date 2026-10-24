@@ -1,10 +1,16 @@
-# hackohio-site
+# React + Vite
 
-Starter repo for The Assembly Club's Git workshop at HackOHI/O.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-1. **Use this template** → name it `hackohio-site` → keep it Public.
-2. `git clone https://github.com/<you>/hackohio-site.git`
-3. Edit `index.html`, then `git add`, `git commit`, `git push`.
-4. Settings → Pages → Source: **GitHub Actions**.
+Currently, two official plugins are available:
 
-Every push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) and publishes the site to `https://<you>.github.io/hackohio-site`.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
